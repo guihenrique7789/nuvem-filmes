@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Nuvem Filmes | Streaming e Locação</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <nav>
+      <img src="./img/logo.png" width="150" alt="Nuvem Filmes | Streaming e Locação">
+      <ul class="menu">
+        <li id="home" onclick="marcar('home')"><a href="#inicio">Início</a></li>
+        <li id="sobre" onclick="marcar('sobre')"><a href="#sobre-nos">Sobre</a></li>
+        <li id="catalogo" onclick="marcar('catalogo')"><a href="#catalogo-section">Catálogo</a></li>
+        <li id="promocoes" onclick="marcar('promocoes')"><a href="#">Promoções</a></li>
+        <li id="fale-conosco" onclick="marcar('fale-conosco')"><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main id="inicio">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235198.68142636976!2d-43.44598205!3d-22.91413075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1761525533799!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+
+    <div class="container" id="contato">
+      <div id="caixalink">
+        <a href="https://facebook.com/" target="_blank"><img src="img/facebook.png" class="imglink" alt="Facebook Nuvem Filmes"></a>
+        <a href="https://instagram.com/" target="_blank"><img src="img/instagram.png" class="imglink" alt="Instagram Nuvem Filmes"></a>
+      </div>
+
+      <hr>
+
+      <form id="contato-form" onsubmit="return false;">
+        <legend>Entre em contato conosco:</legend>
+
+        <div class="linha">
+          <input type="text" name="nome" class="field-required" placeholder="Seu nome">
+          <input type="email" name="email" class="field-required" placeholder="Seu email">
+          <input type="tel" name="celular" class="field-required" placeholder="Seu telefone">
+        </div>
+
+        <textarea name="mensagem" class="field-required" placeholder="Sua mensagem..."></textarea>
+        <button type="button" onclick="enviar()">Enviar Mensagem</button>
+
+        <p id="mensagem-status" class="status"></p>
+      </form>
+    </div>
+  </main>
+
+ 
+  <section id="catalogo-section">
+    <h2>Nosso Catálogo</h2>
+    <input type="text" id="busca" placeholder="Buscar filme..." />
+
+    <div class="catalogo-grid">
+      <div class="card">
+        <img src="./img/filme1.jpg" alt="Filme 1">
+        <h3>Batman: O Cavaleiro das Trevas</h3>
+        <p>2008 • Ação / Drama</p>
+        <button>Ver Detalhes</button>
+      </div>
+
+      <div class="card">
+        <img src="./img/filme2.jpg" alt="Filme 2">
+        <h3>Interestelar</h3>
+        <p>2014 • Ficção / Aventura</p>
+        <button>Ver Detalhes</button>
+      </div>
+
+      <div class="card">
+        <img src="./img/filme3.jpg" alt="Filme 3">
+        <h3>Matrix</h3>
+        <p>1999 • Ficção / Ação</p>
+        <button>Ver Detalhes</button>
+      </div>
+
+      <div class="card">
+        <img src="./img/filme4.jpg" alt="Filme 4">
+        <h3>O Poderoso Chefão</h3>
+        <p>1972 • Drama / Crime</p>
+        <button>Ver Detalhes</button>
+      </div>
+
+      <div class="card">
+        <img src="./img/filme5.jpg" alt="Filme 5">
+        <h3>Avatar</h3>
+        <p>2009 • Aventura / Fantasia</p>
+        <button>Ver Detalhes</button>
+      </div>
+
+      <div class="card">
+        <img src="./img/filme6.jpg" alt="Filme 6">
+        <h3>Homem de Ferro</h3>
+        <p>2008 • Ação / Herói</p>
+        <button>Ver Detalhes</button>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-content">
+      <img src="./img/logo.png" width="120" alt="Logo Nuvem Filmes">
+      <p>© 2025 Nuvem Filmes. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="#inicio">Início</a> |
+        <a href="#catalogo-section">Catálogo</a> |
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
