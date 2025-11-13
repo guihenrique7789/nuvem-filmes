@@ -25,8 +25,6 @@ Simular uma plataforma de streaming com catálogo, busca interativa e formulári
 | HTML5     | Estrutura do site |
 | CSS3      | Estilização e layout |
 | JavaScript | Interatividade e lógica |
-| Git & GitHub | Versionamento e repositório |
-| GitHub Pages | Hospedagem do projeto |
 
 ---
 
